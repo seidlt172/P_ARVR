@@ -1,0 +1,19 @@
+Assignment 01 - Roll a Ball
+Team: Seidl, UrRehman
+
+Minimal version: completed (see seidl_urrehman_minimal.mp4)
+
+Completed bonus tasks (see seidl_urrehman_bonus.mp4): a, b, d, e, f, g, i, j
+
+a) Sound: a short chime plays whenever the Player collects a Pick Up (PickUpSound.cs, generated in code).
+b) Maze: 9 thin walls ("Maze Walls" in the scene hierarchy) form a maze inside the play area.
+d) Lights: 4 additional lights of different types and colors (warm, magenta and green point lights, blue spot light) in ExtraLights.cs.
+e) Soft camera: the camera follows the Player smoothly using Vector3.SmoothDamp (CameraController.cs).
+f) Score: the score ("Score: x / y") is shown during gameplay and increases with each collected item (GameHUD.cs).
+g) Timer: a 60 second countdown is shown during gameplay; "Time's up!" is displayed when it runs out (GameHUD.cs).
+i) "Congratulations!" is displayed when all Pick Ups are collected (GameHUD.cs).
+j) Confetti particle system rains down when all Pick Ups are collected (ConfettiCelebration.cs).
+
+Additional notes:
+- Press R after the game has ended to restart the scene.
+- The HUD, sound, lights and confetti are created by code at runtime (BonusBootstrap.cs), so they appear in the hierarchy as "BonusFeatures" only while the game is running.
